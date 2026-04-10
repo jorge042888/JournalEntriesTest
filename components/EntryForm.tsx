@@ -73,7 +73,7 @@ export default function EntryForm({ onSaved }: Props) {
         onChange={(e) =>
           set(field, e.target.value === "" ? null : parseFloat(e.target.value))
         }
-        className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-dark"
       />
     </div>
   );
@@ -93,14 +93,14 @@ export default function EntryForm({ onSaved }: Props) {
         type={type}
         value={(form[field] as string) ?? ""}
         onChange={(e) => set(field, e.target.value)}
-        className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-dark"
       />
     </div>
   );
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-      <h2 className="text-base font-semibold text-gray-800 mb-5">
+      <h2 className="font-heading text-base font-semibold text-brand-dark mb-5">
         Registro de Asiento Contable
       </h2>
 
@@ -118,7 +118,7 @@ export default function EntryForm({ onSaved }: Props) {
       <form onSubmit={handleSubmit}>
         {/* Cuenta e identificación */}
         <section className="mb-5">
-          <h3 className="text-xs font-semibold text-blue-700 uppercase tracking-wider mb-3">
+          <h3 className="font-heading text-xs font-semibold text-brand-dark/70 uppercase tracking-wider mb-3">
             Cuenta
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -130,7 +130,7 @@ export default function EntryForm({ onSaved }: Props) {
 
         {/* Tercero */}
         <section className="mb-5">
-          <h3 className="text-xs font-semibold text-blue-700 uppercase tracking-wider mb-3">
+          <h3 className="font-heading text-xs font-semibold text-brand-dark/70 uppercase tracking-wider mb-3">
             Tercero
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -143,7 +143,7 @@ export default function EntryForm({ onSaved }: Props) {
 
         {/* Concepto */}
         <section className="mb-5">
-          <h3 className="text-xs font-semibold text-blue-700 uppercase tracking-wider mb-3">
+          <h3 className="font-heading text-xs font-semibold text-brand-dark/70 uppercase tracking-wider mb-3">
             Descripción
           </h3>
           <div>
@@ -154,14 +154,14 @@ export default function EntryForm({ onSaved }: Props) {
               value={form.concepto ?? ""}
               onChange={(e) => set("concepto", e.target.value)}
               rows={2}
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-dark"
             />
           </div>
         </section>
 
         {/* Valores */}
         <section className="mb-5">
-          <h3 className="text-xs font-semibold text-blue-700 uppercase tracking-wider mb-3">
+          <h3 className="font-heading text-xs font-semibold text-brand-dark/70 uppercase tracking-wider mb-3">
             Valores
           </h3>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -174,7 +174,7 @@ export default function EntryForm({ onSaved }: Props) {
 
         {/* Auditoría */}
         <section className="mb-6">
-          <h3 className="text-xs font-semibold text-blue-700 uppercase tracking-wider mb-3">
+          <h3 className="font-heading text-xs font-semibold text-brand-dark/70 uppercase tracking-wider mb-3">
             Auditoría
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -204,7 +204,7 @@ export default function EntryForm({ onSaved }: Props) {
           <button
             type="submit"
             disabled={loading}
-            className="px-6 py-2 text-sm bg-blue-700 text-white rounded hover:bg-blue-800 disabled:opacity-50 font-medium"
+            className="px-6 py-2 text-sm bg-brand-dark text-white rounded hover:bg-brand-dark/90 disabled:opacity-50 font-heading font-medium"
           >
             {loading ? "Guardando..." : "Guardar Asiento"}
           </button>

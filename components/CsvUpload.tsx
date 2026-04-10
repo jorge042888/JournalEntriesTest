@@ -126,13 +126,13 @@ export default function CsvUpload({ onUploaded }: Props) {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
       <div className="flex items-center justify-between mb-5">
-        <h2 className="text-base font-semibold text-gray-800">
+        <h2 className="font-heading text-base font-semibold text-brand-dark">
           Cargue Masivo desde CSV
         </h2>
         <a
           href="/muestra_asientos.csv"
           download
-          className="text-xs text-blue-700 underline hover:text-blue-900"
+          className="text-xs text-brand-dark underline hover:text-brand-dark/70"
         >
           Descargar plantilla de ejemplo
         </a>
@@ -145,7 +145,7 @@ export default function CsvUpload({ onUploaded }: Props) {
             onDrop={handleDrop}
             onDragOver={(e) => e.preventDefault()}
             onClick={() => inputRef.current?.click()}
-            className="border-2 border-dashed border-blue-300 rounded-lg p-10 text-center cursor-pointer hover:border-blue-500 hover:bg-blue-50 transition-colors"
+            className="border-2 border-dashed border-brand-dark/30 rounded-lg p-10 text-center cursor-pointer hover:border-brand-dark hover:bg-brand-cream/20 transition-colors"
           >
             <p className="text-gray-500 text-sm">
               Arrastra un archivo <span className="font-medium">.csv</span> aquí,
@@ -205,10 +205,10 @@ export default function CsvUpload({ onUploaded }: Props) {
           <div className="overflow-x-auto border border-gray-200 rounded-lg mb-5">
             <table className="min-w-full text-xs">
               <thead>
-                <tr className="bg-blue-900 text-white">
+                <tr className="bg-brand-dark text-white">
                   {["Cuenta", "Nombre Cuenta", "NIT", "Nombre Tercero", "Fecha Doc.", "Concepto", "Débito", "Crédito", "Nuevo Saldo"].map(
                     (h) => (
-                      <th key={h} className="px-3 py-2 text-left whitespace-nowrap font-medium">
+                      <th key={h} className="px-3 py-2 text-left whitespace-nowrap font-heading font-medium">
                         {h}
                       </th>
                     )
@@ -217,7 +217,7 @@ export default function CsvUpload({ onUploaded }: Props) {
               </thead>
               <tbody>
                 {rows.map((r, i) => (
-                  <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-blue-50"}>
+                  <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-brand-cream/20"}>
                     <td className="px-3 py-1.5 font-mono whitespace-nowrap">{r.cuenta ?? "—"}</td>
                     <td className="px-3 py-1.5 whitespace-nowrap">{r.nombre_cuenta ?? "—"}</td>
                     <td className="px-3 py-1.5 font-mono whitespace-nowrap">{r.nit ?? "—"}</td>
@@ -241,7 +241,7 @@ export default function CsvUpload({ onUploaded }: Props) {
             </button>
             <button
               onClick={handleUpload}
-              className="px-6 py-2 text-sm bg-blue-700 text-white rounded hover:bg-blue-800 font-medium"
+              className="px-6 py-2 text-sm bg-brand-dark text-white rounded hover:bg-brand-dark/90 font-heading font-medium"
             >
               Importar {rows.length} registros
             </button>

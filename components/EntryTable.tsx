@@ -55,7 +55,7 @@ export default function EntryTable() {
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-      <h2 className="text-base font-semibold text-gray-800 mb-5">
+      <h2 className="font-heading text-base font-semibold text-brand-dark mb-5">
         Consulta de Asientos
       </h2>
 
@@ -70,7 +70,7 @@ export default function EntryTable() {
             value={filterCuenta}
             onChange={(e) => setFilterCuenta(e.target.value)}
             placeholder="Buscar cuenta..."
-            className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-dark"
           />
         </div>
         <div>
@@ -82,7 +82,7 @@ export default function EntryTable() {
             value={filterNit}
             onChange={(e) => setFilterNit(e.target.value)}
             placeholder="Buscar NIT..."
-            className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-dark"
           />
         </div>
         <div>
@@ -93,7 +93,7 @@ export default function EntryTable() {
             type="date"
             value={filterFechaDesde}
             onChange={(e) => setFilterFechaDesde(e.target.value)}
-            className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-dark"
           />
         </div>
         <div>
@@ -104,14 +104,14 @@ export default function EntryTable() {
             type="date"
             value={filterFechaHasta}
             onChange={(e) => setFilterFechaHasta(e.target.value)}
-            className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-dark"
           />
         </div>
       </div>
       <div className="flex justify-end mb-4">
         <button
           onClick={fetchEntries}
-          className="px-4 py-2 text-sm bg-blue-700 text-white rounded hover:bg-blue-800 font-medium"
+          className="px-4 py-2 text-sm bg-brand-dark text-white rounded hover:bg-brand-dark/90 font-heading font-medium"
         >
           Buscar
         </button>
@@ -135,7 +135,7 @@ export default function EntryTable() {
         <div className="overflow-x-auto">
           <table className="min-w-full text-xs">
             <thead>
-              <tr className="bg-blue-900 text-white">
+              <tr className="bg-brand-dark text-white">
                 {[
                   "Cuenta",
                   "Nombre Cuenta",
@@ -154,7 +154,7 @@ export default function EntryTable() {
                 ].map((h) => (
                   <th
                     key={h}
-                    className="px-3 py-2 text-left font-medium whitespace-nowrap"
+                    className="px-3 py-2 text-left font-heading font-medium whitespace-nowrap"
                   >
                     {h}
                   </th>
@@ -165,7 +165,7 @@ export default function EntryTable() {
               {entries.map((e, i) => (
                 <tr
                   key={e.id}
-                  className={i % 2 === 0 ? "bg-white" : "bg-blue-50"}
+                  className={i % 2 === 0 ? "bg-white" : "bg-brand-cream/20"}
                 >
                   <td className="px-3 py-2 whitespace-nowrap font-mono">
                     {e.cuenta ?? "—"}

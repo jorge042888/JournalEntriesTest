@@ -29,15 +29,15 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex border-b border-gray-200 mb-6">
+      <div className="flex border-b border-brand-dark/20 mb-6">
         {tabs.map((t) => (
           <button
             key={t.id}
             onClick={() => setActiveTab(t.id)}
-            className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
+            className={`px-6 py-3 text-sm font-heading font-medium border-b-2 transition-colors ${
               activeTab === t.id
-                ? "border-blue-700 text-blue-700"
-                : "border-transparent text-gray-500 hover:text-gray-700"
+                ? "border-brand-dark text-brand-dark"
+                : "border-transparent text-gray-500 hover:text-brand-dark/70"
             }`}
           >
             {t.label}

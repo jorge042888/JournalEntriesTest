@@ -1,5 +1,18 @@
 import type { Metadata } from "next";
+import { Poppins, Noto_Serif } from "next/font/google";
 import "./globals.css";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+});
+
+const notoSerif = Noto_Serif({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-noto-serif",
+});
 
 export const metadata: Metadata = {
   title: "Journal Entries — Gonzalo Millan y Asociados S.A.",
@@ -12,15 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <body className="bg-gray-50 min-h-screen">
-        <header className="bg-blue-900 text-white shadow-md">
+    <html lang="es" className={`${poppins.variable} ${notoSerif.variable}`}>
+      <body className="bg-brand-cream/20 min-h-screen font-body">
+        <header className="bg-brand-dark text-white shadow-md">
           <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center gap-3">
             <div className="flex flex-col">
-              <span className="text-lg font-bold tracking-wide">
+              <span className="font-heading text-lg font-semibold tracking-wide text-white">
                 Gonzalo Millán y Asociados S.A.
               </span>
-              <span className="text-blue-200 text-sm">
+              <span className="text-brand-cream/80 text-sm font-body">
                 Módulo de Asientos Contables
               </span>
             </div>

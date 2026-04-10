@@ -9,12 +9,14 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          600: "#2563eb",
-          700: "#1d4ed8",
-          900: "#1e3a8a",
+          dark: "#192F32",
+          cream: "#E8E2B3",
+          light: "#e8eeef",
         },
+      },
+      fontFamily: {
+        heading: ["var(--font-poppins)", "sans-serif"],
+        body: ["var(--font-noto-serif)", "serif"],
       },
     },
   },
