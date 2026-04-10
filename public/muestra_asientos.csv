@@ -1,0 +1,21 @@
+cuenta,nombre_cuenta,centro_costo,nit,nombre_tercero,documento,fecha_documento,usuario_registro,usuario_modificacion,fecha_hora_registro,fecha_hora_modificacion,concepto,saldo_anterior,debito,credito,nuevo_saldo
+1105,Caja General,CC001,900123456-1,Gonzalo Millán y Asociados S.A.,RC-001,2026-01-05,jgutierrez,,2026-01-05T08:30:00,,Recaudo de cartera cliente principal,5000000,1200000,0,6200000
+1110,Bancos - Bancolombia,CC001,900123456-1,Gonzalo Millán y Asociados S.A.,NC-105,2026-01-05,jgutierrez,,2026-01-05T09:00:00,,Consignación cheque proveedor,12000000,0,800000,11200000
+2205,Proveedores Nacionales,CC002,800456789-2,Distribuidora Andina Ltda.,FV-2210,2026-01-06,mperez,,2026-01-06T08:15:00,,Pago factura materiales enero,3500000,3500000,0,0
+4135,Ingresos por Servicios,CC003,700987654-3,Constructora del Norte S.A.S.,FE-0430,2026-01-07,jgutierrez,,2026-01-07T10:00:00,,Facturación servicios consultoría enero,0,0,4800000,4800000
+5105,Gastos de Personal,CC001,900123456-1,Gonzalo Millán y Asociados S.A.,NM-001,2026-01-31,mperez,,2026-01-31T17:00:00,,Nómina empleados enero 2026,0,8500000,0,8500000
+2365,Retención en la Fuente,CC001,900123456-1,Gonzalo Millán y Asociados S.A.,RT-001,2026-01-31,mperez,,2026-01-31T17:05:00,,Retención fuente nómina enero,0,0,850000,850000
+1305,Clientes,CC002,811222333-4,Inversiones Palomar S.A.,FE-0431,2026-02-03,jgutierrez,,2026-02-03T09:30:00,,Factura servicios auditoría,0,6200000,0,6200000
+4135,Ingresos por Servicios,CC002,811222333-4,Inversiones Palomar S.A.,FE-0431,2026-02-03,jgutierrez,,2026-02-03T09:31:00,,Ingreso factura auditoría,0,0,6200000,6200000
+5205,Arrendamientos,CC001,900111222-5,Inmobiliaria Central S.A.S.,RC-220,2026-02-05,lrodriguez,,2026-02-05T08:00:00,,Arriendo oficina febrero 2026,0,2800000,0,2800000
+1110,Bancos - Bancolombia,CC001,900123456-1,Gonzalo Millán y Asociados S.A.,EG-330,2026-02-05,lrodriguez,,2026-02-05T08:05:00,,Pago arriendo febrero,11200000,0,2800000,8400000
+2335,Costos y Gastos por Pagar,CC003,860333444-6,Servicios TI Colombia S.A.S.,FV-1800,2026-02-10,mperez,,2026-02-10T11:00:00,,Servicios tecnología febrero,0,0,1500000,1500000
+5305,Mantenimiento y Reparaciones,CC003,860333444-6,Servicios TI Colombia S.A.S.,FV-1800,2026-02-10,mperez,,2026-02-10T11:01:00,,Gasto mantenimiento equipos,0,1500000,0,1500000
+1305,Clientes,CC001,900555666-7,Grupo Empresarial Sur Ltda.,FE-0432,2026-02-14,jgutierrez,,2026-02-14T14:00:00,,Factura asesoría tributaria,0,3900000,0,3900000
+2408,IVA por Pagar,CC001,900555666-7,Grupo Empresarial Sur Ltda.,FE-0432,2026-02-14,jgutierrez,,2026-02-14T14:01:00,,IVA factura asesoría 19%,0,0,741000,741000
+1305,Clientes,CC002,830777888-8,Agropecuaria Los Llanos S.A.,FE-0433,2026-02-20,lrodriguez,,2026-02-20T10:00:00,,Factura revisoría fiscal,0,5100000,0,5100000
+4135,Ingresos por Servicios,CC002,830777888-8,Agropecuaria Los Llanos S.A.,FE-0433,2026-02-20,lrodriguez,,2026-02-20T10:01:00,,Ingreso revisoría fiscal,0,0,5100000,5100000
+5110,Honorarios,CC001,12345678,Juan Carlos Mora Reyes,RC-050,2026-02-28,mperez,,2026-02-28T16:00:00,,Honorarios contador externo febrero,0,3200000,0,3200000
+2365,Retención en la Fuente,CC001,12345678,Juan Carlos Mora Reyes,RC-050,2026-02-28,mperez,,2026-02-28T16:02:00,,Retención honorarios 11%,0,0,352000,352000
+1110,Bancos - Davivienda,CC001,900123456-1,Gonzalo Millán y Asociados S.A.,NC-210,2026-03-05,jgutierrez,,2026-03-05T09:00:00,,Recaudo cartera Inversiones Palomar,8400000,6200000,0,14600000
+5405,Gastos Financieros,CC001,860999000-9,Banco de Bogotá S.A.,EG-401,2026-03-10,lrodriguez,,2026-03-10T08:30:00,,Comisión bancaria marzo,0,45000,0,45000
