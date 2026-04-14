@@ -4,8 +4,9 @@ import { useState } from "react";
 import EntryForm from "@/components/EntryForm";
 import EntryTable from "@/components/EntryTable";
 import CsvUpload from "@/components/CsvUpload";
+import AnalysisDashboard from "@/components/AnalysisDashboard";
 
-type Tab = "registro" | "cargue" | "consulta";
+type Tab = "registro" | "cargue" | "consulta" | "analisis";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>("registro");
@@ -25,6 +26,7 @@ export default function Home() {
     { id: "registro", label: "Nuevo Asiento" },
     { id: "cargue", label: "Cargue CSV" },
     { id: "consulta", label: "Consultar Asientos" },
+    { id: "analisis", label: "Análisis" },
   ];
 
   return (
@@ -48,6 +50,7 @@ export default function Home() {
       {activeTab === "registro" && <EntryForm onSaved={handleSaved} />}
       {activeTab === "cargue" && <CsvUpload onUploaded={handleUploaded} />}
       {activeTab === "consulta" && <EntryTable key={refreshKey} />}
+      {activeTab === "analisis" && <AnalysisDashboard />}
     </div>
   );
 }
